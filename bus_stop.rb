@@ -11,10 +11,5 @@ attr_accessor :name, :queue
     @queue.push(new_passenger)
     return @queue.count
   end
-
-  # def pick_up_from_stop(the_queue)
-  #   @passenger.push(the_queue)
-  #   return @passenger.count
-  # end
-
+  
 end

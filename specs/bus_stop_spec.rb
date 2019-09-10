@@ -16,16 +16,4 @@ class TestBusStop < MiniTest::Test
     assert_equal(1, @stop1.queue.count)
   end
 
-  def test_all_passengers_from_stop
-    @stop1.pick_up_from_stop()
-    # zero in the queue
-    assert_equal(0,@stop1.queue.count)
-    assert_equal(1, @double_decker1.passenger.count)
-  end
-
-  # def test_queue_add_all
-  #   @stop1.pick_up_from_stop(@queue)
-  #   assert_equal(1, @stop1.queue.count)
-  # end
-
 end

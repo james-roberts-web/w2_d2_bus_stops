@@ -1,6 +1,9 @@
 require ('minitest/autorun')
 require ('minitest/rg')
+
 require_relative ('../person')
+require_relative ("../bus")
+require_relative ("../bus_stop")
 
 class TestPerson < MiniTest::Test
 

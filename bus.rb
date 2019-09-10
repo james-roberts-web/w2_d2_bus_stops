@@ -1,7 +1,8 @@
 class Bus
+
 attr_accessor :route, :destination, :passenger
 
-  def initialize (route, destination, passenger=[])
+  def initialize(route, destination, passenger=[])
     @route = route
     @destination = destination
     @passenger = passenger
@@ -25,6 +26,10 @@ attr_accessor :route, :destination, :passenger
 
   def empty_bus
     @passenger.clear
+  end
+
+  def pick_up_from_stop(full_queue)
+    @passenger.push(full_queue)
   end
 
 
